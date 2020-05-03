@@ -278,7 +278,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile3, function (sprite, location
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
-    mySprite2,
+    mySprite,
     [img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -380,7 +380,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location
         ))
     }
     game.splash("destroy a skeleton fast", "mage cat")
-    mySprite22 = sprites.create(img`
+    mySprite2 = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -406,14 +406,14 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
 `, SpriteKind.Enemy)
-    tiles.placeOnRandomTile(mySprite22, sprites.castle.tileGrass1)
-    mySprite22.follow(mySprite2)
+    tiles.placeOnRandomTile(mySprite2, sprites.castle.tileGrass1)
+    mySprite2.follow(mySprite)
 })
-let mySprite22: Sprite = null
 let mySprite2: Sprite = null
+let mySprite: Sprite = null
 let _1 = 0
 info.setLife(3)
-mySprite2 = sprites.create(img`
+mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . 
@@ -431,7 +431,7 @@ f 1 8 f 1 . . . . . . . . . . . 8 . . .
 . . . . 8 . 8 . . . . 8 . 8 . . . . . . 
 . . . . 8 . 8 . . . . 8 . 8 . . . . . . 
 `, SpriteKind.Player)
-controller.moveSprite(mySprite2, 200, 200)
+controller.moveSprite(mySprite, 200, 200)
 scene.setBackgroundColor(6)
 tiles.setTilemap(tiles.createTilemap(
             hex`1000100001010101010101010101010101010101010101010101010101010101010101010101010301010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101`,
@@ -456,4 +456,4 @@ tiles.setTilemap(tiles.createTilemap(
             [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9],
             TileScale.Sixteen
         ))
-scene.cameraFollowSprite(mySprite2)
+scene.cameraFollowSprite(mySprite)
