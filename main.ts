@@ -591,6 +591,10 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     )
     _1 += 1
 })
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile14, function (sprite, location) {
+    game.splash("you got a fire rock")
+    info.changeScoreBy(10)
+})
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (_1 == 1) {
         info.changeScoreBy(1)
