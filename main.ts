@@ -189,9 +189,124 @@ e e b e 6 6 6 6 6 6 6 6 6 6 e 6
 6 6 6 b 6 e 6 6 6 6 6 b 6 e 6 6 
 6 6 6 e 6 b 6 6 6 6 6 e 6 e 6 6 
 `
+    //% blockIdentity=images._tile
+    export const tile10 = img`
+7 7 7 7 7 7 7 5 7 7 7 7 7 7 7 7 
+7 7 7 7 7 5 5 5 5 5 7 7 7 7 7 7 
+7 7 7 7 5 5 5 5 5 5 5 7 7 7 7 7 
+7 7 7 5 5 5 5 5 5 5 5 5 5 7 7 7 
+7 5 5 5 5 5 5 5 5 5 5 5 5 5 5 7 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5 
+5 5 5 5 e 1 f 1 e e 5 5 5 5 5 5 
+5 5 5 5 e f f f e e 5 5 5 5 5 5 
+5 5 5 5 e 1 f 1 e e 5 5 5 5 5 5 
+5 5 5 5 e e e e e e 5 5 5 5 5 5 
+5 5 5 5 e f e e e e 5 5 5 5 5 5 
+5 5 5 5 e e e e e e 5 5 5 5 5 5 
+5 5 5 5 e e e e e e 5 5 5 5 5 5 
+`
+    //% blockIdentity=images._tile
+    export const tile11 = img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`
+    //% blockIdentity=images._tile
+    export const tile12 = img`
+c c c c c c c c c c c c c c c c 
+c c c c c c c c c c c c c c c c 
+c c c c c c c c c c c c c c c c 
+c c c c c c c c c c c c c c c c 
+c c c c c c c c c c c c c c c c 
+c c c 2 c c c c c c c c c c c c 
+c c 2 2 c c c c c c c c c c c c 
+2 2 2 2 c c c c c c c c c c c c 
+2 f 1 2 c c c c c c c c c c c c 
+2 f 1 2 c c c c c c c c c c c c 
+2 2 2 2 c c c c c c c c c c c 2 
+2 2 2 2 c c c c c c c c c c 2 c 
+c c c 2 2 2 2 2 2 2 2 2 2 2 c c 
+c c c 2 2 2 2 2 2 2 2 2 2 2 c c 
+c c c 2 c 2 c c c c c 2 c 2 c c 
+c c c 2 c 2 c c c c c 2 c 2 c c 
+`
 }
+/**
+ */
+/**
+ * fighr cat quest
+ */
+/**
+ * 1. fire cat quest.
+ * 
+ * 2. make a house for a new cat.
+ */
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile9, function (sprite, location) {
     game.splash("thank you", "Moue Moue")
+    pause(1000)
+    tiles.setTilemap(tiles.createTilemap(
+            hex`2800280001010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010103011501010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0c0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0c0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0c0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0c0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f010101010101010101010101010101010e0101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f0101010101010e0101010e0101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f0101010101010101010101010101010101010e010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f010101010101010e0101010101010101010101010101010101010a0f0f0f0f0f0c0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f11010101010101010101010101010101010101010101010101010a0f0f0c0f0f0c0f0f0f0f0f0f0f0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0c0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f`,
+            img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,sprites.castle.tilePath6,sprites.castle.tilePath9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
+            TileScale.Sixteen
+        ))
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile1, function (sprite, location) {
     if (controller.up.isPressed() && controller.B.isPressed()) {
@@ -215,9 +330,15 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile1, function (sprite, location
 . . . . . 2 2 . . . . . . . . . 
 . . . . . 2 2 . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLight0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLight0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
             TileScale.Sixteen
         ))
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile12, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        game.splash("help", "fire cat")
+        game.splash("I need a fire rock", "fire cat")
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile5, function (sprite, location) {
@@ -266,7 +387,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile5, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
             TileScale.Sixteen
         ))
     }
@@ -321,7 +442,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (_1 == 1) {
-        score += 1
+        info.changeScoreBy(1)
         otherSprite.destroy()
     } else {
         info.changeLifeBy(-1)
@@ -329,7 +450,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location) {
-    if (score == 1) {
+    if (controller.B.isPressed() && info.score() == 1) {
         game.splash("thank for getting a coin now I can kast a spell so you can get into the forest ", "mage cat")
         tiles.setTilemap(tiles.createTilemap(
             hex`2800280001010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010103010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0c0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0c0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0c0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0c0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f010101010101010101010101010101010e0101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f0101010101010e0101010e0101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f0101010101010101010101010101010101010e010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f010101010101010e0101010101010101010101010101010101010a0f0f0f0f0f0c0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f11010101010101010101010101010101010101010101010101010a0f0f0c0f0f0c0f0f0f0f0f0f0f0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0c0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f12`,
@@ -375,12 +496,12 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
             TileScale.Sixteen
         ))
-    }
-    game.splash("destroy a skeleton fast", "mage cat")
-    mySprite2 = sprites.create(img`
+    } else if (controller.B.isPressed()) {
+        game.splash("destroy a skeleton fast", "mage cat")
+        mySprite2 = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
@@ -406,11 +527,38 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . 
 `, SpriteKind.Enemy)
-    tiles.placeOnRandomTile(mySprite2, sprites.castle.tileGrass1)
-    mySprite2.follow(mySprite)
+        tiles.placeOnRandomTile(mySprite2, sprites.castle.tileGrass1)
+        mySprite2.follow(mySprite)
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile10, function (sprite, location) {
+    if (controller.up.isPressed() && controller.B.isPressed()) {
+        tiles.setTilemap(tiles.createTilemap(
+            hex`100010000b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b020202020202020202020202020b0b0b020202020202020202020202020b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . 2 2 . . . 
+. . . . . . . . . . . 2 2 . . . 
+. . . . . . . . . . . 2 2 . . . 
+. . . . . . . . . . . 2 2 . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,sprites.dungeon.darkGroundCenter,myTiles.tile11,myTiles.tile12],
+            TileScale.Sixteen
+        ))
+    }
 })
 let mySprite2: Sprite = null
-let score = 0
 let mySprite: Sprite = null
 let _1 = 0
 info.setLife(3)
@@ -454,7 +602,7 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
             TileScale.Sixteen
         ))
 scene.cameraFollowSprite(mySprite)
