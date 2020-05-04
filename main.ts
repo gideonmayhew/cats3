@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const superenemy = SpriteKind.create()
+}
 namespace myTiles {
     //% blockIdentity=images._tile
     export const tile0 = img`
@@ -210,22 +213,22 @@ e e b e 6 6 6 6 6 6 6 6 6 6 e 6
 `
     //% blockIdentity=images._tile
     export const tile11 = img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 4 4 4 4 4 4 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 4 2 2 2 
+2 4 2 2 2 2 4 4 4 2 2 2 4 4 2 2 
+2 4 2 2 2 4 4 4 2 4 2 2 2 4 2 2 
+2 4 2 4 4 2 2 2 2 2 4 2 4 2 2 2 
+2 4 2 4 4 2 2 2 2 2 2 4 4 2 2 2 
+2 4 2 2 2 2 2 2 2 2 2 4 4 2 2 2 
+2 4 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 4 2 2 2 2 2 2 2 2 4 2 4 2 2 2 
+2 4 2 2 4 4 2 2 2 4 2 2 4 2 2 4 
+2 2 2 2 4 4 4 4 4 2 2 2 4 2 2 2 
+2 2 2 2 4 4 4 2 2 2 2 4 4 2 2 2 
+2 2 2 2 2 4 4 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 4 4 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 4 4 2 
 `
     //% blockIdentity=images._tile
     export const tile12 = img`
@@ -245,6 +248,44 @@ c c c 2 2 2 2 2 2 2 2 2 2 2 c c
 c c c 2 2 2 2 2 2 2 2 2 2 2 c c 
 c c c 2 c 2 c c c c c 2 c 2 c c 
 c c c 2 c 2 c c c c c 2 c 2 c c 
+`
+    //% blockIdentity=images._tile
+    export const tile13 = img`
+c c c c c c c c c c c c c c c c 
+c c c c c c c c c c c c c c c c 
+c c c c c c c c c c c c c c c c 
+c c c c c c f f f f f c c c c c 
+c c c f f f f e e e f f f f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e f e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f e e e e e e e e e f c c 
+c c c f f f f f f f f f f f c c 
+`
+    //% blockIdentity=images._tile
+    export const tile14 = img`
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 f f f f f f f 2 2 2 2 2 
+2 2 2 f 2 b b b b 2 2 f 2 2 2 2 
+2 2 2 f 2 2 2 2 2 2 2 f 2 2 2 2 
+2 2 2 f 2 b b 2 b b 2 f 2 2 2 2 
+2 2 2 f 2 b 2 2 b b b f 2 2 2 2 
+2 2 2 f 2 2 2 2 2 2 2 f 2 2 2 2 
+2 2 2 f 2 2 2 2 b 2 2 f 2 2 2 2 
+2 2 2 f 2 b b 2 2 2 b f 2 2 2 2 
+2 2 2 2 f f f f f f f 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
 `
 }
 /**
@@ -304,7 +345,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile9, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,sprites.castle.tilePath6,sprites.castle.tilePath9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,sprites.castle.tilePath6,sprites.castle.tilePath9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14],
             TileScale.Sixteen
         ))
 })
@@ -330,9 +371,108 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile1, function (sprite, location
 . . . . . 2 2 . . . . . . . . . 
 . . . . . 2 2 . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLight0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,sprites.dungeon.darkGroundCenter,sprites.dungeon.floorLight0,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14],
             TileScale.Sixteen
         ))
+    }
+})
+scene.onOverlapTile(SpriteKind.Player, myTiles.tile13, function (sprite, location) {
+    if (controller.B.isPressed()) {
+        tiles.setTilemap(tiles.createTilemap(
+            hex`3c003c0001010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010103010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0c0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0c0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0c0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0c0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f1414141414141414141414141414141414141414010101010101010101010101010101010e0101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140101010101010e0101010e0101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140101010101010101010101010101010101010e010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f1414141414141414141414141414141414141414010101010101010e0101010101010101010101010101010101010a0f0f0f0f0f0c0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141401010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f141414141414141414141414141414141414141411010101010101010101010101010101010101010101010101010a0f0f0c0f0f0c0f0f0f0f0f0f0f14141414141414141414141414141414141414140a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0c0f0f0f0c0f0f0f0f0f0f0f14141414141414141414141414141414141414140f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f1414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141417141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414`,
+            img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14,sprites.dungeon.collectibleRedCrystal],
+            TileScale.Sixteen
+        ))
+        mySprite4 = sprites.create(img`
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . f f f f . . . . . . . . . . 
+. . . . . . . . f f 1 1 1 1 f f . . . . . . . . 
+. . . . . . . f b 1 1 1 1 1 1 b f . . . . . . . 
+. . . . . . . f 1 1 1 1 1 1 1 1 f . . . . . . . 
+. . . . . . f d 1 1 1 1 1 1 1 1 d f . . . . . . 
+. . . . 7 . f d 1 1 1 1 1 1 1 1 d f . . . . . . 
+. . . 7 . . f d 1 1 1 1 1 1 1 1 d f . . . . . . 
+. . . 7 . . f d 1 1 1 1 1 1 1 1 d f . . . . . . 
+. . . 7 . . f d d d 1 1 1 1 d d d f f . . . . . 
+. . . 7 7 . f b d b f d d f b d b f c f . . . . 
+. . . 7 7 7 f c d c f 1 1 f c d c f b f . . . . 
+. . . . 7 7 f f f b d b 1 b d f f c f . . . . . 
+. . . . f c b 1 b c f f f f f f . . . . . . . . 
+. . . . f 1 c 1 c 1 f f f f f f . . . . . . . . 
+. . . . f d f d f d f f f f f . . . . . . . . . 
+. . . . . f . f . f . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+`, SpriteKind.superenemy)
+        mySprite4.follow(mySprite)
+        tiles.placeOnRandomTile(mySprite, myTiles.tile11)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile12, function (sprite, location) {
@@ -387,15 +527,26 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile5, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14],
             TileScale.Sixteen
         ))
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile3, function (sprite, location) {
-    game.splash("help", "catty")
-    game.splash("you need to go save my brother Moue Moue", "catty")
-    game.splash("Moue Moue went to the forest", "catty")
+    if (controller.B.isPressed()) {
+        game.splash("help", "catty")
+        game.splash("you need to go save my brother Moue Moue", "catty")
+        game.splash("Moue Moue went to the forest", "catty")
+    } else if (controller.B.isPressed() && info.score() > 1) {
+        game.splash("thank you for bringing Moue Moue", "catty")
+    }
+})
+sprites.onOverlap(SpriteKind.Player, SpriteKind.superenemy, function (sprite, otherSprite) {
+    if (_1 == 1) {
+        otherSprite.destroy()
+    } else {
+        mySprite.destroy()
+    }
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
@@ -438,7 +589,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     100,
     false
     )
-    _1 = 1
+    _1 += 1
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     if (_1 == 1) {
@@ -450,7 +601,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location) {
-    if (controller.B.isPressed() && info.score() == 1) {
+    if (controller.B.isPressed() && info.score() > 2) {
         game.splash("thank for getting a coin now I can kast a spell so you can get into the forest ", "mage cat")
         tiles.setTilemap(tiles.createTilemap(
             hex`2800280001010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010103010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0c0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0c0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0c0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0c0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0c0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f010101010101010101010101010101010e0101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f0101010101010e0101010e0101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f0101010101010101010101010101010101010e010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f010101010101010e0101010101010101010101010101010101010a0f0f0f0f0f0c0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f01010101010101010101010101010101010101010101010101010a0f0f0f0f0f0f0f0f0f0f0f0f0f11010101010101010101010101010101010101010101010101010a0f0f0c0f0f0c0f0f0f0f0f0f0f0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0c0f0f0f0f0c0f0f0f0c0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f12`,
@@ -496,7 +647,7 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,sprites.builtin.forestTiles23,sprites.builtin.forestTiles20,sprites.builtin.forestTiles22,sprites.castle.tileDarkGrass3,sprites.builtin.forestTiles0,sprites.castle.tileDarkGrass2,sprites.castle.tileGrass2,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14],
             TileScale.Sixteen
         ))
     } else if (controller.B.isPressed()) {
@@ -529,12 +680,40 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile8, function (sprite, location
 `, SpriteKind.Enemy)
         tiles.placeOnRandomTile(mySprite2, sprites.castle.tileGrass1)
         mySprite2.follow(mySprite)
+        mySprite3 = sprites.create(img`
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . f f f f . . . . . . . . . . 
+. . . . . . . . f f 1 1 1 1 f f . . . . . . . . 
+. . . . . . . f b 1 1 1 1 1 1 b f . . . . . . . 
+. . . . . . . f 1 1 1 1 1 1 1 1 f . . . . . . . 
+. . . . . . f d 1 1 1 1 1 1 1 1 d f . . . . . . 
+. . . . . . f d 1 1 1 1 1 1 1 1 d f . . . . . . 
+. . . . . . f d d d 1 1 1 1 d d d f . . . . . . 
+. . . . . . f b d b f d d f b d b f . . . . . . 
+. . . . . . f c d c f 1 1 f c d c f . . . . . . 
+. . . . . . . f b 1 1 1 1 1 1 b f . . . . . . . 
+. . . . . . f f f c d b 1 b d f f f f . . . . . 
+. . . . f c 1 1 1 c b f b f c 1 1 1 c f . . . . 
+. . . . f 1 b 1 b 1 f f f f 1 b 1 b 1 f . . . . 
+. . . . f b f b f f f f f f b f b f b f . . . . 
+. . . . . . . . . f f f f f f . . . . . . . . . 
+. . . . . . . . . . . f f f . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . 
+`, SpriteKind.Enemy)
+        mySprite3.follow(mySprite)
+        tiles.placeOnRandomTile(mySprite3, sprites.castle.tileGrass1)
     }
 })
 scene.onOverlapTile(SpriteKind.Player, myTiles.tile10, function (sprite, location) {
     if (controller.up.isPressed() && controller.B.isPressed()) {
         tiles.setTilemap(tiles.createTilemap(
-            hex`100010000b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b020202020202020202020202020b0b0b020202020202020202020202020b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d`,
+            hex`100010000e0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b0b0b0b0b0b0b0b0b0b0b0b02020b0b0b020202020202020202020202020b0b0b020202020202020202020202020b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0d`,
             img`
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
@@ -553,15 +732,18 @@ scene.onOverlapTile(SpriteKind.Player, myTiles.tile10, function (sprite, locatio
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,sprites.dungeon.darkGroundCenter,myTiles.tile11,myTiles.tile12],
+            [myTiles.tile0,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,sprites.dungeon.darkGroundCenter,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14],
             TileScale.Sixteen
         ))
     }
 })
+let mySprite3: Sprite = null
 let mySprite2: Sprite = null
+let mySprite4: Sprite = null
 let mySprite: Sprite = null
 let _1 = 0
 info.setLife(3)
+info.changeScoreBy(1)
 mySprite = sprites.create(img`
 . . . . . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . . . . . 
@@ -602,7 +784,7 @@ tiles.setTilemap(tiles.createTilemap(
 . . . . . . . . . . . . . . . . 
 . . . . . . . . . . . . . . . . 
 `,
-            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12],
+            [myTiles.tile0,sprites.castle.tileGrass1,sprites.castle.tilePath5,myTiles.tile1,myTiles.tile2,myTiles.tile3,myTiles.tile4,myTiles.tile5,myTiles.tile6,myTiles.tile7,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile11,myTiles.tile12,myTiles.tile13,myTiles.tile14],
             TileScale.Sixteen
         ))
 scene.cameraFollowSprite(mySprite)
