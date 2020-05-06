@@ -7,7 +7,8 @@
         "color-coded-tilemap": "*",
         "jacdac-game": "*",
         "animation": "*",
-        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0"
+        "settings-blocks": "github:microsoft/pxt-settings-blocks#v1.0.0",
+        "pxt-lantern": "github:riknoll/pxt-lantern#v0.1.1"
     },
     "files": [
         "main.blocks",
